@@ -1,0 +1,342 @@
+#section-landing {
+    display: flex;
+    margin: 0 8% 0 8%;
+    .section-left {
+        
+        .left-box {
+            margin-bottom: 20px;
+
+            .left-box-title {
+                font-family: $Benyo;
+                font-size: 20px;
+                margin: 20px 0;
+                color: $pink_3;
+            }
+
+            .left-box-text {
+                font-size: 12px;
+                font-weight: 100;
+                line-height: 1.5;
+                margin: 0 30px 20px 0;
+                text-align: justify;
+            }
+        }
+    }
+
+    .section-right {
+
+        .right-card {
+            width: 80%;
+            height: 40%;
+            margin: 30% auto;
+            background: $white;
+            border-radius: 15px;
+            color: $dark_blue;
+
+            .right-card-img {
+                text-align: center;
+                transform: translateY(-200px);
+                img {
+                    transition: .3s all ease;
+                    width: 80%;
+                    border-radius: 20px;
+                }
+            }
+
+            .right-card-description {
+                width: 70%;
+                margin: 0 auto;
+                transform: translateY(-180px);
+
+                .desc-title {
+                    text-align: center;
+                    font-weight: bold;
+                    margin: 10px;
+                }
+
+                .desc-status {
+                    font-size: 10px;
+                    color: $white;
+                    text-align: center;
+                    margin: 20px;
+
+                    span {
+                        background: $purple;
+                        border-radius: 5px;
+                        margin: 5px;
+                        padding: 5px;
+                    }
+                }
+
+                .desc-info {
+                    font-size: 13px;
+                    text-align: justify;
+                    p {
+                        margin-bottom: 10px;
+                    }
+
+                    span {
+                        font-weight: bold;
+                    }
+
+                    .info-except {
+                        font-weight: 100;
+                    }
+                }
+            }
+        }
+
+        .right-img {
+            width: 80%;
+            margin: 0 auto;
+            
+            img {
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+}
+
+.contact {
+    height: 150vh;
+    background: url(./../Illustrations/Landing_page/Pantherhome4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .contact-box {
+        transform: translateY(150px);
+        text-align: center;
+        color: $dark_blue;
+        width: 55%;
+        padding: 50px 0;
+        margin: 0 auto;
+        border-radius: 150px;
+        background: linear-gradient($white 2%, $white 20%, #ffffff6c, #ffffff1c);
+
+        p {
+            font-size: 15px;
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            form {
+                display: flex;
+                flex-direction: column;
+
+                input::placeholder, textarea::placeholder {
+                    color: $dark_blue;
+                }
+
+                input[type="text"], input[type="email"] {
+                    width: 50%;
+                    margin: 5px auto;
+                    padding: 10px;
+                    background: transparent;
+                    border-radius: 20px;
+                    border: 1px solid $dark_blue;
+                }
+
+                input[type="submit"]{
+                    width: 20%;
+                    margin: 5px auto;
+                    padding: 10px;
+                    border-radius: 20px;
+                    border: inherit;
+                    background: $pink_1;
+                    color: $dark_blue;
+                    text-transform: uppercase;
+                }
+
+                textarea {
+                    width: 50%;
+                    margin: 5px auto;
+                    background: transparent;
+                    border-radius: 20px;
+                    border: 1px solid $dark_blue;
+                    padding: 10px;
+                }
+
+            }
+        }
+    }
+}
+
+// Wakanda styles
+#wakanda-section-part {
+    background: url(./../Illustrations/Wakanda_page/Pantherwakanda2.png);
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.wakanda-section {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    background-color: darken($color: #021233dc, $amount: 2);
+    
+    .section-card {
+        width: 60%;
+        margin: 0 auto;
+
+        h1 {
+            text-transform: uppercase;
+            font-family: $Benyo;
+            color: $pink_3;
+            font-size: large;
+        }
+        
+        p {
+            text-align: justify;
+            margin: 20px 0;
+        }
+
+        .section-img {
+            transform: translateX(-100px);
+        }
+    }
+}
+
+//Enigme styles
+
+.enigme-section {
+    display: flex;
+    margin-left: 100px;
+}
+
+.enigme-card {
+    width: 40%;
+    .e-card-title {
+        margin: 10px 0;
+        h1 {
+            font-family: $Benyo;
+            text-transform: uppercase;
+            text-decoration: underline;
+            color: $pink_3;
+            font-size: 25px;
+        }
+        span {
+            font-family: 'Arial';
+        }
+    }
+
+    .e-card-quest {
+        margin: 10px 0;
+        .quest-part-1 {
+            font-size: 12px;
+        }
+
+        .quest-part-2 {
+            color: $pink_3;
+            font-size: 25px;
+            font-family: $Wakanda;
+            margin: 10% 0;
+            word-spacing: 10px;
+            line-height: 1.5;
+        }
+    }
+
+    .e-card-quest-2 {
+        .quest-2-part-1 {
+            font-size: 12px;
+        }
+
+        .quest-2-part-2 {
+            margin: 10% 0;
+            font-size: 12px;
+        }
+    }
+
+    .e-card-quest-3 {
+        .quest-3-part-1 {
+            font-size: 12px;
+        }
+
+        .quest-3-part-2 {
+            word-spacing: 10px;
+            line-height: 1.5;
+            margin: 10% 0;
+            font-size: 12px;
+        }
+    }
+
+    .e-card-answer {
+        p{
+            font-size: smaller;
+        }
+        form {
+            width: 80%;
+            input[type="text"] {
+                border: 1px $pink_1 solid;
+                background: transparent;
+                padding: 10px;
+                border-radius: 40px;
+                width: 100%;
+                margin: 10px auto;
+            }
+
+            input[type="button"] {
+                display: block;
+                border: none;
+                padding: 10px 20px;
+                margin: 20px auto;
+                border-radius: 40px;
+                background: $pink_1;
+                color: $dark_blue;
+                font-size: 12px;
+                font-family: $Cantarell;
+            }
+        }
+    }
+}
+
+.enigme-card {
+    .e-card-indice {
+        transform: translateX(20%);
+        text-align: center;
+
+        div.indice {
+
+            transform: translateY(50%) translateX(10%);
+            div {
+                margin-top: 20px;
+            }            
+        }
+        img {
+            // position: absolute;
+            transform: translateY(-50%);
+            width: 800Px;
+        }
+    }
+}
+
+#reponse-enigme {
+    color: $white;
+}
+
+#alphabet-container {
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    .font {
+        font-family: $Wakanda;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+@import "./_slide";
+@import "./_pop-up";

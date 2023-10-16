@@ -1,0 +1,39 @@
+
+.slide-card {
+    display: flex;
+    background: rgb(3 20 54);
+    width: 100%;
+
+    .card-text {
+        font-size: 15px;
+        width: 60%;
+        text-align: justify;
+        padding: 20px 50px 0 50px;
+
+        h1 {
+            font-family: $Benyo;
+            color: $pink_3;
+            font-size: 20px;
+        }
+
+        p {
+            margin-top: 20px;
+            a {
+                color: $white;
+                display: block;
+                margin-top:10px;
+            }
+        }
+    }
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+    background: rgb(3 20 54);
+    border-radius: 20px;
+
+    img {
+        transition: transform .3s ease;
+    }
+}

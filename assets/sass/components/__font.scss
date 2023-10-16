@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'wakanda';
+    src: url(./../fonts/WakandaForever-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'benyo';
+    src: url(./../fonts/BEYNO.ttf);
+}
+
+@font-face {
+    font-family: 'panthera';
+    src: url(./../fonts/PantheraRegular-MVZ9J.ttf);
+}
+
+@font-face {
+    font-family: 'cantarell';
+    src: url(./../fonts/Cantarell-Regular.ttf);
+}
+
+$Wakanda :'wakanda';
+$Benyo :'benyo';
+$Panthera :'panthera';
+$Cantarell :'cantarell';

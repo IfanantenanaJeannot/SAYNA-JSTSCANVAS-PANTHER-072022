@@ -1,0 +1,691 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, a, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+/*animation scroll*/
+
+.box{
+  transition: 3s ease;
+  transform: translateX(-300%);
+}     /*cacher les content*/
+
+.box1{
+  transition: 3s ease;
+  transform: translateX(300%);
+} 
+.box1.show{
+  transform: translateX(120px);
+}
+.box.show{
+  transform: translateX(120px);
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style-type: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  appearance: none;
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "wakanda";
+  src: url(./../fonts/WakandaForever-Regular.ttf);
+}
+@font-face {
+  font-family: "benyo";
+  src: url(./../fonts/BEYNO.ttf);
+}
+@font-face {
+  font-family: "panthera";
+  src: url(./../fonts/PantheraRegular-MVZ9J.ttf);
+}
+@font-face {
+  font-family: "cantarell";
+  src: url(./../fonts/Cantarell-Regular.ttf);
+}
+.vertical-line {
+  position: fixed;
+  z-index: 2;
+  margin-left: 50px;
+}
+.vertical-line .ext-line {
+  position: absolute;
+  top: 0;
+  transform: translateX(-20px);
+  width: 3px;
+  height: 65vh;
+  background: #9E91B7;
+}
+.vertical-line .int-line {
+  width: 3px;
+  height: 35vh;
+  background: #9E91B7;
+}
+
+.social-link {
+  transform: translateX(-20px);
+  display: flex;
+  flex-direction: column;
+}
+.social-link a {
+  padding: 10px;
+  margin-top: 5px;
+}
+
+body {
+  background: radial-gradient(circle, #021740, #0e1626, #0e1626, #071e31);
+  color: white;
+  font-family: "cantarell";
+  overflow-x: hidden;
+}
+
+.separator {
+  padding: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 5% 2% 8%;
+}
+nav li {
+  margin: 0 30px;
+}
+nav li a {
+  font-family: "benyo";
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+nav .nav-link ul {
+  display: flex;
+  margin: 0 20px;
+}
+
+.active-link {
+  text-decoration: underline;
+  color: #9E91B7;
+}
+
+header {
+  overflow: hidden;
+}
+
+.head-part-2 {
+  height: 100vh;
+  display: flex;
+  font-size: 10px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+.head-part-2 .head-description {
+  width: 60%;
+  margin-top: 15%;
+  transform: translateX(120px);
+}
+.head-part-2 .head-img img {
+  position: relative;
+  width: 100%;
+}
+.head-part-2 .head-title {
+  font-family: "panthera";
+  font-size: 50px;
+  color: #9E91B7;
+  transition: all 0.3s ease-in-out;
+}
+.head-part-2 .head-subtitle {
+  font-family: "benyo";
+  font-size: 25px;
+  margin: 5px 0 20px 0;
+  color: #9E91B7;
+  transition: all 0.3s ease-in-out;
+}
+.head-part-2 .head-text {
+  margin-bottom: 20px;
+  width: 70%;
+}
+.head-part-2 .head-link a {
+  color: #ffffff;
+}
+
+.wakanda-head {
+  height: 100vh;
+  background: url(./../Illustrations/Wakanda_page/Pantherwakanda1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.wakanda-head .wakanda-head-content {
+  color: #9E91B7;
+  width: 80%;
+  padding: 15% 0 0 3%;
+  transform: translateX(100px);
+}
+.wakanda-head .wakanda-head-content .wakanda-title {
+  margin-bottom: 20px;
+  font-family: "benyo";
+  font-size: 50px;
+  transition: all 0.3s ease;
+}
+.wakanda-head .wakanda-head-content .wakanda-subtitle {
+  margin-bottom: 20px;
+  font-family: "wakanda";
+  font-size: 25px;
+  transition: transform 0.3s ease;
+}
+.wakanda-head .wakanda-head-content .wakanda-text {
+  text-align: justify;
+  width: 50%;
+}
+
+.enigme-head .enigme-head-content {
+  display: flex;
+}
+.enigme-head .enigme-head-content .enigme-img img {
+  width: 100%;
+}
+.enigme-head .enigme-head-content .enigme-text {
+  width: 50%;
+  transform: translateX(-100px);
+  margin-top: 200px;
+}
+.enigme-head .enigme-head-content .enigme-text h1 {
+  font-family: "benyo";
+  font-size: 50px;
+  color: #9E91B7;
+  transition: all 0.3s ease-in-out;
+}
+.enigme-head .enigme-head-content .enigme-text p {
+  font-size: 12px;
+  letter-spacing: 1.5;
+  font-weight: 100;
+  width: 70%;
+  text-align: justify;
+}
+.enigme-head .enigme-head-content .enigme-text .enigme-text-item {
+  transform: translate(100px, 160px);
+}
+.enigme-head .enigme-head-content .enigme-text .enigme-text-item div {
+  text-align: center;
+  transform: translateX(-80px);
+}
+.enigme-head .enigme-head-content .enigme-text .enigme-text-item div img {
+  width: 30px;
+  margin-top: 20px;
+}
+
+.fond-enigme-text {
+  position: absolute;
+  width: 140%;
+  z-index: -1;
+}
+
+#section-landing {
+  display: flex;
+  margin: 0 8% 0 8%;
+}
+#section-landing .section-left .left-box {
+  margin-bottom: 20px;
+}
+#section-landing .section-left .left-box .left-box-title {
+  font-family: "benyo";
+  font-size: 20px;
+  margin: 20px 0;
+  color: #9E91B7;
+}
+#section-landing .section-left .left-box .left-box-text {
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 1.5;
+  margin: 0 30px 20px 0;
+  text-align: justify;
+}
+#section-landing .section-right .right-card {
+  width: 80%;
+  height: 40%;
+  margin: 30% auto;
+  background: #ffffff;
+  border-radius: 15px;
+  color: #021740;
+}
+#section-landing .section-right .right-card .right-card-img {
+  text-align: center;
+  transform: translateY(-200px);
+}
+#section-landing .section-right .right-card .right-card-img img {
+  transition: 0.3s all ease;
+  width: 80%;
+  border-radius: 20px;
+}
+#section-landing .section-right .right-card .right-card-description {
+  width: 70%;
+  margin: 0 auto;
+  transform: translateY(-180px);
+}
+#section-landing .section-right .right-card .right-card-description .desc-title {
+  text-align: center;
+  font-weight: bold;
+  margin: 10px;
+}
+#section-landing .section-right .right-card .right-card-description .desc-status {
+  font-size: 10px;
+  color: #ffffff;
+  text-align: center;
+  margin: 20px;
+}
+#section-landing .section-right .right-card .right-card-description .desc-status span {
+  background: #3D2DA6;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+}
+#section-landing .section-right .right-card .right-card-description .desc-info {
+  font-size: 13px;
+  text-align: justify;
+}
+#section-landing .section-right .right-card .right-card-description .desc-info p {
+  margin-bottom: 10px;
+}
+#section-landing .section-right .right-card .right-card-description .desc-info span {
+  font-weight: bold;
+}
+#section-landing .section-right .right-card .right-card-description .desc-info .info-except {
+  font-weight: 100;
+}
+#section-landing .section-right .right-img {
+  width: 80%;
+  margin: 0 auto;
+}
+#section-landing .section-right .right-img img {
+  transition: all 0.3s ease-in-out;
+}
+
+.contact {
+  height: 150vh;
+  background: url(./../Illustrations/Landing_page/Pantherhome4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contact .contact-box {
+  transform: translateY(150px);
+  text-align: center;
+  color: #021740;
+  width: 55%;
+  padding: 50px 0;
+  margin: 0 auto;
+  border-radius: 150px;
+  background: linear-gradient(#ffffff 2%, #ffffff 20%, rgba(255, 255, 255, 0.4235294118), rgba(255, 255, 255, 0.1098039216));
+}
+.contact .contact-box p {
+  font-size: 15px;
+}
+.contact .contact-box h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.contact .contact-box .contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-box .contact-form form input::placeholder, .contact .contact-box .contact-form form textarea::placeholder {
+  color: #021740;
+}
+.contact .contact-box .contact-form form input[type=text], .contact .contact-box .contact-form form input[type=email] {
+  width: 50%;
+  margin: 5px auto;
+  padding: 10px;
+  background: transparent;
+  border-radius: 20px;
+  border: 1px solid #021740;
+}
+.contact .contact-box .contact-form form input[type=submit] {
+  width: 20%;
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 20px;
+  border: inherit;
+  background: #F2CEF2;
+  color: #021740;
+  text-transform: uppercase;
+}
+.contact .contact-box .contact-form form textarea {
+  width: 50%;
+  margin: 5px auto;
+  background: transparent;
+  border-radius: 20px;
+  border: 1px solid #021740;
+  padding: 10px;
+}
+
+#wakanda-section-part {
+  background: url(./../Illustrations/Wakanda_page/Pantherwakanda2.png);
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.wakanda-section {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  background-color: rgba(2, 15, 41, 0.862745098);
+}
+.wakanda-section .section-card {
+  width: 60%;
+  margin: 0 auto;
+}
+.wakanda-section .section-card h1 {
+  text-transform: uppercase;
+  font-family: "benyo";
+  color: #9E91B7;
+  font-size: large;
+}
+.wakanda-section .section-card p {
+  text-align: justify;
+  margin: 20px 0;
+}
+.wakanda-section .section-card .section-img {
+  transform: translateX(-100px);
+}
+
+.enigme-section {
+  display: flex;
+  margin-left: 100px;
+}
+
+.enigme-card {
+  width: 40%;
+}
+.enigme-card .e-card-title {
+  margin: 10px 0;
+}
+.enigme-card .e-card-title h1 {
+  font-family: "benyo";
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #9E91B7;
+  font-size: 25px;
+}
+.enigme-card .e-card-title span {
+  font-family: "Arial";
+}
+.enigme-card .e-card-quest {
+  margin: 10px 0;
+}
+.enigme-card .e-card-quest .quest-part-1 {
+  font-size: 12px;
+}
+.enigme-card .e-card-quest .quest-part-2 {
+  color: #9E91B7;
+  font-size: 25px;
+  font-family: "wakanda";
+  margin: 10% 0;
+  word-spacing: 10px;
+  line-height: 1.5;
+}
+.enigme-card .e-card-quest-2 .quest-2-part-1 {
+  font-size: 12px;
+}
+.enigme-card .e-card-quest-2 .quest-2-part-2 {
+  margin: 10% 0;
+  font-size: 12px;
+}
+.enigme-card .e-card-quest-3 .quest-3-part-1 {
+  font-size: 12px;
+}
+.enigme-card .e-card-quest-3 .quest-3-part-2 {
+  word-spacing: 10px;
+  line-height: 1.5;
+  margin: 10% 0;
+  font-size: 12px;
+}
+.enigme-card .e-card-answer p {
+  font-size: smaller;
+}
+.enigme-card .e-card-answer form {
+  width: 80%;
+}
+.enigme-card .e-card-answer form input[type=text] {
+  border: 1px #F2CEF2 solid;
+  background: transparent;
+  padding: 10px;
+  border-radius: 40px;
+  width: 100%;
+  margin: 10px auto;
+}
+.enigme-card .e-card-answer form input[type=button] {
+  display: block;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px auto;
+  border-radius: 40px;
+  background: #F2CEF2;
+  color: #021740;
+  font-size: 12px;
+  font-family: "cantarell";
+}
+
+.enigme-card .e-card-indice {
+  transform: translateX(20%);
+  text-align: center;
+}
+.enigme-card .e-card-indice div.indice {
+  transform: translateY(50%) translateX(10%);
+}
+.enigme-card .e-card-indice div.indice div {
+  margin-top: 20px;
+}
+.enigme-card .e-card-indice img {
+  transform: translateY(-50%);
+  width: 800Px;
+}
+
+#reponse-enigme {
+  color: #ffffff;
+}
+
+#alphabet-container {
+  font-size: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+#alphabet-container .font {
+  font-family: "wakanda";
+}
+
+.hide {
+  display: none;
+}
+
+.slide-card {
+  display: flex;
+  background: rgb(3, 20, 54);
+  width: 100%;
+}
+.slide-card .card-text {
+  font-size: 15px;
+  width: 60%;
+  text-align: justify;
+  padding: 20px 50px 0 50px;
+}
+.slide-card .card-text h1 {
+  font-family: "benyo";
+  color: #9E91B7;
+  font-size: 20px;
+}
+.slide-card .card-text p {
+  margin-top: 20px;
+}
+.slide-card .card-text p a {
+  color: #ffffff;
+  display: block;
+  margin-top: 10px;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+  background: rgb(3, 20, 54);
+  border-radius: 20px;
+}
+.container img {
+  transition: transform 0.3s ease;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  z-index: 6;
+}
+
+.popup-content {
+  background: linear-gradient(#9385b4, #2b2687);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  margin: 10% auto;
+  box-shadow: 0 0 40px 70px #2b2687;
+}
+
+#pop-up-title {
+  margin: 20px;
+}
+
+#pop-up-btn {
+  margin: 20Px;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  background: #F2CEF2;
+  color: #021740;
+  text-transform: uppercase;
+  font-size: 9px;
+}
+
+.pop-card {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 100px 100px 0 0;
+  background: linear-gradient(rgb(51, 40, 146), rgb(2, 21, 56), rgb(3, 21, 56));
+}
+footer .footer-img .footer-img-1 {
+  transform: translate(190px, -135px);
+}
+footer .footer-img .footer-img-2 {
+  width: 50%;
+}
+footer .footer-desc {
+  margin: 60px;
+}
+footer .footer-desc .footer-desc-card {
+  display: flex;
+  margin-bottom: 50px;
+}
+footer .footer-desc .footer-desc-card .foot-card-1 .foot-1-secondary {
+  margin-top: 30px;
+  text-transform: capitalize;
+}
+footer .footer-desc .footer-desc-card .foot-card-1 .foot-1-secondary p {
+  margin: 5px;
+  font-weight: 100;
+}
+footer .footer-desc .footer-desc-card .foot-card-2 {
+  transform: translateX(100px);
+}
+footer .foot-1-primary {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+footer .foot-1-primary p {
+  letter-spacing: 6px;
+}
+footer .foot-2-secondary {
+  margin: 30px 0;
+}
+footer .foot-2-secondary img {
+  margin-right: 20px;
+}
+footer .copyRight {
+  font-size: 10px;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.scale-transform {
+  transform: scale(1.3);
+  transition: transform 0.5s ease;
+  border-radius: 10px;
+}
+
+.enigme-text h1:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.wakanda-subtitle:hover, .wakanda-title:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.head-title:hover, .head-subtitle:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.section-right img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */

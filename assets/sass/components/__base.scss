@@ -1,0 +1,24 @@
+@import "./_colors";
+@import "./_font";
+@import "./_vertical-line";
+
+body {
+    background: radial-gradient(circle, #021740, #0e1626, #0e1626, #071e31);
+    color: white;
+    font-family: $Cantarell;
+    overflow-x: hidden;
+}
+
+.separator {
+    padding:100px;
+}
+
+@import "./_header";
+
+
+@import "./_section";
+
+
+@import "./_footer";
+
+@import "./_animation";

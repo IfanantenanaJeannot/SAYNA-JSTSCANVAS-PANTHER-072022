@@ -1,0 +1,30 @@
+.vertical-line {
+    position: fixed;
+    z-index: 2;
+    margin-left: 50px;
+    .ext-line {
+        position: absolute;
+        top: 0;
+        transform: translateX(-20px);
+        width: 3px;
+        height: 65vh;
+        background: $pink_3;
+    }
+
+    .int-line {
+        width: 3px;
+        height: 35vh;
+        background: $pink_3;
+    }
+}
+
+.social-link {
+    transform: translateX(-20px);
+    display: flex;
+    flex-direction: column;
+
+    a {
+        padding: 10px;
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACK PANTHER | ENIGMES</title>
+    <link rel="stylesheet" href="./../assets/style/style.css">
+</head>
+<body>
+
+    <div class="vertical-line">
+        <div class="ext-line"></div>
+        <div class="int-line"></div>
+        <div class="social-link">
+            <a href="">
+                <img src="./../assets/Logos/icon_facebook.png" alt="">
+            </a>
+            <a href="">
+                <img src="./../assets/Logos/icon_instagram.png" alt="">
+            </a>
+            <a href="">
+                <img src="./../assets/Logos/icon_twitter.png" alt="">
+            </a>
+            <a href="">
+                <img src="./../assets/Logos/icon_tik_tok.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div>
+                <img src="./../assets/Logos/icon_SaynaXMarvel.png" alt="">
+            </div>
+            <div class="nav-link">
+                <ul>
+                    <li><a href="./../index.html">accueil</a></li>
+                    <li><a href="./../pages/wakanda.html">wakanda</a></li>
+                    <li><a class="active-link" href="./../pages/enigme.html">enigme</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="enigme-head">
+            <div class="enigme-head-content">
+                <div class="enigme-img">
+                    <img src="./../assets/Illustrations/Page_Enigme/Pantherenigme1.png" alt="">
+                </div>
+                <div class="enigme-text">
+                    <div>
+                        <h1 >
+                            releve le defi <br> des dora milaje
+                        </h1>
+                        <img class="fond-enigme-text" src="./../assets/Illustrations/Page_Enigme/Pantherenigme2.png" alt="">
+                        <div class="enigme-text-item">
+                            <p>
+                                Les Dora Milaje sont de farouches guerrières d’élite. Elles constituent la garde
+                                rapprochée du Roi en personne et ont de nombreuses occasions de lui sauver la
+                                vie. Leur Générale, Okoyé est également la dirigeante des forces armées et des
+                                renseignements wakandais.
+                                <br><br>
+                                La réussite de cette évaluation ne dépend pas de la chance mais bel et bien de
+                                l’entrainement que tu as suivi jusqu’ici ainsi que de ta détermination. Relève ce défi
+                                et montre-nous que tu es capable de porter les valeurs du Black Panther et du
+                                Wakanda !
+                            </p>
+                            
+                            <div>
+                                <img src="./../assets/Illustrations/Page_Enigme/Pantherenigme3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <main>
+
+        <section>
+            <div class="enigme-part">
+                <div class="enigme-section">
+                    <div class="enigme-card">
+                        <div class="e-card-title">
+                            <h1>enigme numero <span>1</span></h1>
+                        </div>
+
+                        <div class="quest-gener">
+                            <div class="e-card-quest">
+                                <p class="quest-part-1">
+                                    Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais,
+                                    et apprend par la même occasion la première valeur d’une Dora Milaje.
+                                </p>
+                                <p class="quest-part-2">
+                                    “ SI JE SUIS FIDELE C’EST A CE TRONE PEU IMPORTE QUI MONTE DESSUS ”
+                                </p>
+                            </div>
+
+                            <div class="e-card-quest-2 hide">
+                                <p class="quest-2-part-1">
+                                    Une anecdote intéressante est écrite juste en dessous mais elle est codée par un
+                                    code césar également appelé code de chiffrement par décalage . L’alphabet a été
+                                    décalé, trouve la clé de chiffrement qui te permettrait de retrouver les lettres et
+                                    retranscris la phrase :
+                                </p>
+                                <p class="quest-2-part-2">
+                                    Tm nqtu lmjcbm i Wikstivl mv Kitqnwzvqm. Qt aioqb lm ti dqttm lwvb mab
+                                    wzqoqviqzm Zgiv Kwwotmz mb moitmumvb ti dqttm ycq i dc viqbzm tm
+                                    uwcdmumvb xwtqbqycm lma jtiks xivbpmza
+                                </p>
+                            </div>
+
+                            <div class="e-card-quest-3 hide">
+                                <p class="quest-3-part-1">
+                                    Lorsque T’Challa mange l’herbe en forme de coeur pour recevoir les pouvoirs du
+                                    Black Panther, il voit son père afin de lui demander conseil afin de devenir un bon
+                                    roi. Cette scène rappelle la même scène d’un certain film où un père dit à son fils de
+                                    ne pas oublier qui il est et d’où il vient. Quel est ce film ?
+                                </p>
+                                <p class="quest-3-part-2">
+                                    01001100 01000101 00100000 01010010 01001111 01001001
+                                    00100000 01001100 01001001 01001111 01001110 00001101
+                                    00001010
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="e-card-answer">
+                            <p>
+                                Alors, tu as la réponse ?
+                            </p>
+                            <form action="">
+                                <input type="text" id="reponse-enigme" placeholder="Réponse">
+                                <input type="button" value="ENVOYER" id="send-btn">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="enigme-card">
+                        <div class="e-card-indice">
+                            <div class="indice">
+                                Voici la transcription de l'alphabet : <br>
+                                <div id="alphabet-container"></div>
+                            </div>
+                            <img src="./../assets/Illustrations/Page_Enigme/Pantherenigme2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup" id="popup">
+                    <div class="popup-content">
+                        <h2 id="pop-up-title">Titre</h2>
+                        <p id="pop-up-text">Text</p>
+                        <div>
+                            <button id="pop-up-btn">Button</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="enigmaPopup" class="popup">
+                    <div class="popup-content">
+                        <h2>ENIGME TERMINÉE</h2>
+                        <button id="close">Close</button>
+                        <div class="pop-card">
+                            <div class="pop-img">
+                                <img src="./figma_logo.svg" alt="">
+                            </div>
+                            <div class="pop-text">
+                                <p>
+                                    Coming soon ... <br>
+                                    <span id="countdown">00:00:00</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-img">
+            <img class="footer-img-1" src="./../assets/Logos/icon_SaynaXMarvel.png" alt="">
+            <img class="footer-img-2" src="./../assets/Logos/Group 2052.png" alt="">
+        </div>
+        <div class="footer-desc">
+            <div class="footer-desc-card">
+                <div class="foot-card-1">
+                    <div class="foot-1-primary">
+                        <p>pages</p>
+                    </div>
+                    <div class="foot-1-secondary">
+                        <a href="../index.html"><p>home</p></a>
+                        <a href="./wakanda.html"><p>wakanda</p></a>
+                        <a href="./enigme.html"><p>énigmes</p></a>
+                    </div>
+                </div>
+                <div class="foot-card-2">
+                    <div class="foot-1-primary">
+                        <p>retrouvez nous</p>
+                    </div>
+                    <div class="foot-2-secondary">
+                        <img src="./../assets/Logos/icon_facebook_footer.png" alt="">
+                        <img src="./../assets/Logos/icon_instagram_footer.png" alt="">
+                        <img src="./../assets/Logos/icon_twitter_footer.png" alt="">
+                        <img src="./../assets/Logos/icon_ti_tok_footer.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="copyRight">
+                <p>2022 Tous droits réservés ● Politique de confidentialité ● Conditions d’utilisation</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./../assets/scripts/js/scriptEnigme.js"></script>
+</body>
+</html>
