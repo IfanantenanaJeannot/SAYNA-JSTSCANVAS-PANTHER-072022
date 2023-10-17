@@ -1,19 +1,19 @@
-#section-landing {
+#hero {
     display: flex;
     margin: 0 8% 0 8%;
-    .section-left {
+    .left-box-container {
         
         .left-box {
             margin-bottom: 20px;
 
-            .left-box-title {
+            .title {
                 font-family: $Benyo;
                 font-size: 20px;
                 margin: 20px 0;
                 color: $pink_3;
             }
 
-            .left-box-text {
+            .story {
                 font-size: 12px;
                 font-weight: 100;
                 line-height: 1.5;
@@ -23,7 +23,7 @@
         }
     }
 
-    .section-right {
+    .right-box {
 
         .right-card {
             width: 80%;
@@ -43,18 +43,18 @@
                 }
             }
 
-            .right-card-description {
+            .description {
                 width: 70%;
                 margin: 0 auto;
                 transform: translateY(-180px);
 
-                .desc-title {
+                .name {
                     text-align: center;
                     font-weight: bold;
                     margin: 10px;
                 }
 
-                .desc-status {
+                .etat {
                     font-size: 10px;
                     color: $white;
                     text-align: center;
@@ -68,7 +68,7 @@
                     }
                 }
 
-                .desc-info {
+                .profil{
                     font-size: 13px;
                     text-align: justify;
                     p {
@@ -104,7 +104,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    .contact-box {
+    .formulaire {
         transform: translateY(150px);
         text-align: center;
         color: $dark_blue;
@@ -124,7 +124,7 @@
             margin-bottom: 20px;
         }
 
-        .contact-form {
+        .form {
             form {
                 display: flex;
                 flex-direction: column;
@@ -167,33 +167,31 @@
     }
 }
 
-// Wakanda styles
-#wakanda-section-part {
-    background: url(./../Illustrations/Wakanda_page/Pantherwakanda2.png);
+// Wakanda
+#second-container {
+    background: url(./../Illustrations/Wakanda_page/Pantherwakanda2.png) no-repeat;
     background-position: top center;
     background-size: contain;
-    background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.wakanda-section {
+.second-content {
     padding-top: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-size: 12px;
-    letter-spacing: 1px;
     line-height: 1.5;
     background-color: darken($color: #021233dc, $amount: 2);
     
-    .section-card {
-        width: 60%;
+    .content-card {
+        width: 65%;
         margin: 0 auto;
 
         h1 {
             text-transform: uppercase;
             font-family: $Benyo;
             color: $pink_3;
-            font-size: large;
+            font-size: 25px;
         }
         
         p {
@@ -201,22 +199,22 @@
             margin: 20px 0;
         }
 
-        .section-img {
+        .img {
             transform: translateX(-100px);
         }
     }
 }
 
-//Enigme styles
+//Enigme
 
-.enigme-section {
+.enigme-container {
     display: flex;
     margin-left: 100px;
 }
 
-.enigme-card {
+.enigme-content {
     width: 40%;
-    .e-card-title {
+    .card-title {
         margin: 10px 0;
         h1 {
             font-family: $Benyo;
@@ -230,13 +228,13 @@
         }
     }
 
-    .e-card-quest {
+    .card-quest {
         margin: 10px 0;
-        .quest-part-1 {
+        .quest1 {
             font-size: 12px;
         }
 
-        .quest-part-2 {
+        .quest2 {
             color: $pink_3;
             font-size: 25px;
             font-family: $Wakanda;
@@ -246,23 +244,23 @@
         }
     }
 
-    .e-card-quest-2 {
-        .quest-2-part-1 {
-            font-size: 12px;
+    .card-quest2 {
+        .quest1 {
+            font-size: 14px;
         }
 
-        .quest-2-part-2 {
+        .quest2 {
             margin: 10% 0;
-            font-size: 12px;
+            font-size: 14px;
         }
     }
 
-    .e-card-quest-3 {
-        .quest-3-part-1 {
-            font-size: 12px;
+    .card-quest3 {
+        .quest1 {
+            font-size: 14px;
         }
 
-        .quest-3-part-2 {
+        .quest2 {
             word-spacing: 10px;
             line-height: 1.5;
             margin: 10% 0;
@@ -270,7 +268,7 @@
         }
     }
 
-    .e-card-answer {
+    .answer {
         p{
             font-size: smaller;
         }
@@ -300,22 +298,21 @@
     }
 }
 
-.enigme-card {
-    .e-card-indice {
+.indice {
+    .indice-content {
         transform: translateX(20%);
         text-align: center;
 
-        div.indice {
+        div.indice-txt {
 
             transform: translateY(50%) translateX(10%);
             div {
-                margin-top: 20px;
+                margin-top: -30px;
             }            
         }
         img {
-            // position: absolute;
             transform: translateY(-50%);
-            width: 800Px;
+            width: 800px;
         }
     }
 }
@@ -323,17 +320,14 @@
 #reponse-enigme {
     color: $white;
 }
-
-#alphabet-container {
-    font-size: 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-
-    .font {
-        font-family: $Wakanda;
-    }
+.alphabet span{
+    font-family:$Wakanda;
+    color: $pink_3;
+    font-size:25px;
 }
-
+.alphabet p{
+    padding:20px;
+}
 .hide {
     display: none;
 }

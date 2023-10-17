@@ -1,15 +1,15 @@
-const sendResponse = document.getElementById("send-btn");
+const sendResponse = document.getElementById("send");
 const popup = document.getElementById("popup");
 const questionSuivant = document.getElementById("pop-up-btn");
 const popUpTitle = document.getElementById("pop-up-title");
 const popUpText = document.getElementById("pop-up-text");
-const titreEnigme = document.querySelector(".e-card-title");
-const enigme1 = document.querySelector(".e-card-quest");
-const enigme2 = document.querySelector(".e-card-quest-2");
-const enigme3 = document.querySelector(".e-card-quest-3");
+const titreEnigme = document.querySelector(".card-title");
+const enigme1 = document.querySelector(".card-quest");
+const enigme2 = document.querySelector(".card-quest2");
+const enigme3 = document.querySelector(".card-quest3");
 const closeP = document.getElementById('close');
-const indice = document.querySelector(".e-card-indice div");
-const alphabetContainer = document.getElementById("alphabet-container");
+const indice = document.querySelector(".indice-content div");
+const alphabetContainer = document.getElementById("alphabet");
 const body = document.body;
 
 
@@ -26,7 +26,7 @@ function fermeturePopUp() {
     popup.style.display = "none";
     body.style.overflow = "auto";
 
-    const reponseEnigme = document.getElementById("reponse-enigme");
+    const reponseEnigme = document.getElementById("reponse");
     reponseEnigme.value = "";
 }
 
@@ -65,7 +65,7 @@ function popUpFinished() {
 }
 
 sendResponse.addEventListener("click", function() {
-    const reponseEnigme = document.getElementById("reponse-enigme");
+    const reponseEnigme = document.getElementById("reponse");
     const reponse = reponseEnigme.value.trim();
     const reponseFormat = reponse.toLowerCase();
 

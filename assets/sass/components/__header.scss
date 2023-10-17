@@ -4,17 +4,17 @@ header {
     overflow: hidden;
 }
 
-.head-part-2 {
+.container {
     height: 100vh;
     display: flex;
     font-size: 10px;
     font-weight: 100;
     letter-spacing: 1px;
 
-    .head-description {
+    .description {
         width: 60%;
         margin-top: 15%;
-        transform: translateX(120px);
+        transform: translateX(125px);
     }
 
     .head-img {
@@ -24,73 +24,72 @@ header {
         }
     }
 
-    .head-title {
+    .content-title {
         font-family: $Panthera;
         font-size: 50px;
         color: $pink_3;
-        transition: all .3s ease-in-out;
+        transition: 3s ease-in-out;
     }
 
-    .head-subtitle {
+    .content-title2 {
         font-family: $Benyo;
         font-size: 25px;
         margin: 5px 0 20px 0;
         color: $pink_3;
-        transition: all .3s ease-in-out;
+        transition: 3s ease-in-out;
     }
 
-    .head-text {
+    .content {
         margin-bottom: 20px;
         width: 70%;
     }
 
-    .head-link {
+    .link {
         a{
             color: $white;
         }
     }
 }
 
-//Wakanda page
+//Wakanda
 
-.wakanda-head {
+.container-wak {
     height: 100vh;
-    background: url(./../Illustrations/Wakanda_page/Pantherwakanda1.png);
+    background: url(./../Illustrations/Wakanda_page/Pantherwakanda1.png) no-repeat;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 
-    .wakanda-head-content {
+    .content-wak {
         color: $pink_3;
         width: 80%;
         padding: 15% 0 0 3%;
         transform: translateX(100px);
 
-        .wakanda-title {
-            margin-bottom: 20px;
+        .content-title {
+            margin-bottom: 10px;
             font-family: $Benyo;
             font-size: 50px;
             transition: all .3s ease;
         }
 
-        .wakanda-subtitle {
+        .content-title2 {
             margin-bottom: 20px;
             font-family: $Wakanda;
             font-size: 25px;
             transition: transform .3s ease;
         }
 
-        .wakanda-text {
+        .content {
             text-align: justify;
             width: 50%;
         }
     }
 }
 
-//Enigme page
+//Enigme
 
-.enigme-head {
-    .enigme-head-content {
+.enigme-container {
+    .enigme-content {
         display: flex;
 
         .enigme-img {
@@ -98,7 +97,7 @@ header {
                 width: 100%;
             }
         }
-        .enigme-text {
+        .description {
             width: 50%;
             transform: translateX(-100px);
             margin-top: 200px;
@@ -118,7 +117,7 @@ header {
                 text-align: justify;
             }
 
-            .enigme-text-item {
+            .enigme-text {
                 transform: translate(100px,160px);
 
                 div{
@@ -135,7 +134,7 @@ header {
     }
 }
 
-.fond-enigme-text {
+.background {
     position: absolute;
     width: 140%;
     z-index: -1;

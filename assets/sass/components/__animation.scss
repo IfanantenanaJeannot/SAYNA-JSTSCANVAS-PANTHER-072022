@@ -9,7 +9,7 @@
     transition: transform .3s ease;
 }
 
-.enigme-text {
+.enigme-container .description {
     h1 {
         &:hover {
             @extend %scale;
@@ -17,21 +17,15 @@
     }
 }
 
-.wakanda-subtitle, .wakanda-title {
+.content-title, .content-title2 {
     &:hover {
         transform: scale(1.1);
         transition: transform .3s ease;
     }
 }
 
-.head-title, .head-subtitle {
-    &:hover {
-        transform: scale(1.1);
-        transition: transform .3s ease;
-    }
-}
 
-.section-right {
+.right-box {
     img {
         &:hover {
             transform: scale(1.2);
