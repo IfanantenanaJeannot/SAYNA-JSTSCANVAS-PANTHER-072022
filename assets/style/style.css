@@ -19,11 +19,6 @@ footer, header, nav, section, main {
 }
 /*animation scroll*/
 
-.box{
-  transition: 3s ease;
-  transform: translateX(-300%);
-}     /*cacher les content*/
-
 .reveal {
   transform: translateX(-300%);
   opacity: 0;
@@ -44,6 +39,16 @@ footer, header, nav, section, main {
   transform: translateX(0);
   opacity: 1;
 }
+
+/*animation souris*/
+.mousemove{
+  width: 30px;
+  height: 30px;
+  position:absolute;
+  display:block;
+  z-index:1;
+}
+
 
 body {
   line-height: 1;
