@@ -24,15 +24,25 @@ footer, header, nav, section, main {
   transform: translateX(-300%);
 }     /*cacher les content*/
 
-.box1{
-  transition: 3s ease;
-  transform: translateX(300%);
-} 
-.box1.show{
-  transform: translateX(120px);
+.reveal {
+  transform: translateX(-300%);
+  opacity: 0;
+  transition: 2s all ease;
 }
-.box.show{
-  transform: translateX(120px);
+
+.reveal-right {
+  transform: translateX(300%);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.reveal-right.active {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 body {
