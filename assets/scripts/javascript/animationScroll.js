@@ -1,36 +1,33 @@
-const boxes = document.querySelectorAll('.box');
-const box1 = document.querySelectorAll('.box1');
+var reveals = document.querySelectorAll(".reveal");
+function reveal() {
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 200;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
 
-window.addEventListener('scroll', checkboxes);
-checkboxes();
+window.addEventListener("scroll", reveal);
 
-function checkboxes(){
-    const triggerBottom = window.innerHeight / 3*2;
+var revealesRight = document.querySelectorAll(".reveal-right");
+function revealesByRight() {
+    for (var i = 0; i < revealesRight.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = revealesRight[i].getBoundingClientRect().top;
+      var elementVisible = 200;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        revealesRight[i].classList.add("active");
+      } else {
+        revealesRight[i].classList.remove("active");
+      }
+    }
+  }
 
-    boxes.forEach((box) => {
-        const boxTop = box.getBoundingClientRect().top;
-
-        if(boxTop < triggerBottom) {
-            box.classList.add('show');
-        } else{
-            box.classList.remove('show')
-        }
-    });
-};
-
-window.addEventListener('scroll', checkboxe);
-checkboxe();
-
-function checkboxe(){
-    const triggerBottom = window.innerHeight / 3*2;
-
-    box1.forEach((box1) => {
-        const boxTop = box1.getBoundingClientRect().top;
-
-        if(boxTop < triggerBottom) {
-            box1.classList.add('show');
-        } else{
-            box1.classList.remove('show')
-        }
-    });
-};
+window.addEventListener("scroll", revealesByRight);
