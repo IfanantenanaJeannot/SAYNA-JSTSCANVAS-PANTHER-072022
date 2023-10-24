@@ -17,38 +17,6 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
 footer, header, nav, section, main {
   display: block;
 }
-/*animation scroll*/
-
-.reveal {
-  transform: translateX(-300%);
-  opacity: 0;
-  transition: 2s all ease;
-}
-
-.reveal-right {
-  transform: translateX(300%);
-  opacity: 0;
-  transition: 2s all ease;
-}
-
-.reveal.active {
-  transform: translateX(0);
-  opacity: 1;
-}
-.reveal-right.active {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-/*animation souris*/
-.mousemove{
-  width: 30px;
-  height: 30px;
-  position:absolute;
-  display:block;
-  z-index:1;
-}
-
 
 body {
   line-height: 1;
@@ -84,6 +52,39 @@ input {
   font-family: "cantarell";
   src: url(./../fonts/Cantarell-Regular.ttf);
 }
+
+/*animation scroll*/
+
+.reveal {
+  transform: translateX(-300%);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal-right {
+  transform: translateX(300%);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.reveal-right.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/*animation souris*/
+#mousemove{
+  width: 25px;
+  height: 30px;
+  position:absolute;
+  display: block;
+  z-index:1;
+}
+
 .vertical-line {
   position: fixed;
   z-index: 2;
@@ -143,7 +144,7 @@ nav .nav-link ul {
   margin: 0 20px;
 }
 
-.active-link {
+.active {
   text-decoration: underline;
   color: #9E91B7;
 }
@@ -152,136 +153,141 @@ header {
   overflow: hidden;
 }
 
-.head-part-2 {
+.container-head {
   height: 100vh;
   display: flex;
   font-size: 10px;
   font-weight: 100;
   letter-spacing: 1px;
 }
-.head-part-2 .head-description {
+.container-head .content {
   width: 60%;
   margin-top: 15%;
   transform: translateX(120px);
 }
-.head-part-2 .head-img img {
+.container-head .background img {
   position: relative;
   width: 100%;
 }
-.head-part-2 .head-title {
+.container-head .title {
   font-family: "panthera";
   font-size: 50px;
   color: #9E91B7;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
-.head-part-2 .head-subtitle {
+.container-head .title2 {
   font-family: "benyo";
   font-size: 25px;
   margin: 5px 0 20px 0;
   color: #9E91B7;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
-.head-part-2 .head-text {
+.container-head .description {
   margin-bottom: 20px;
   width: 70%;
 }
-.head-part-2 .head-link a {
+.container-head .prince a {
   color: #ffffff;
 }
 
-.wakanda-head {
+.container-wak {
   height: 100vh;
   background: url(./../Illustrations/Wakanda_page/Pantherwakanda1.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.wakanda-head .wakanda-head-content {
+.container-wak .content-wak {
   color: #9E91B7;
   width: 80%;
   padding: 15% 0 0 3%;
   transform: translateX(100px);
 }
-.wakanda-head .wakanda-head-content .wakanda-title {
+.container-wak .content-wak .title-wak {
   margin-bottom: 20px;
   font-family: "benyo";
   font-size: 50px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
-.wakanda-head .wakanda-head-content .wakanda-subtitle {
+.container-wak .content-wak .title-wak2 {
   margin-bottom: 20px;
   font-family: "wakanda";
   font-size: 25px;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
-.wakanda-head .wakanda-head-content .wakanda-text {
+.container-wak .content-wak .text-description {
   text-align: justify;
   width: 50%;
 }
 
-.enigme-head .enigme-head-content {
+.enigme-container .enigme-content {
   display: flex;
 }
-.enigme-head .enigme-head-content .enigme-img img {
+.enigme-container .enigme-content .enigme-header-bcg img {
   width: 100%;
 }
-.enigme-head .enigme-head-content .enigme-text {
+.enigme-container .enigme-content .title {
   width: 50%;
   transform: translateX(-100px);
   margin-top: 200px;
 }
-.enigme-head .enigme-head-content .enigme-text h1 {
+.enigme-container .enigme-content .title h1 {
   font-family: "benyo";
   font-size: 50px;
   color: #9E91B7;
   transition: all 0.3s ease-in-out;
 }
-.enigme-head .enigme-head-content .enigme-text p {
+.enigme-container .enigme-content .title p {
   font-size: 12px;
   letter-spacing: 1.5;
   font-weight: 100;
   width: 70%;
   text-align: justify;
 }
-.enigme-head .enigme-head-content .enigme-text .enigme-text-item {
+.enigme-container .enigme-content .title .description {
   transform: translate(100px, 160px);
 }
-.enigme-head .enigme-head-content .enigme-text .enigme-text-item div {
+.enigme-container .enigme-content .title .description div {
   text-align: center;
   transform: translateX(-80px);
 }
-.enigme-head .enigme-head-content .enigme-text .enigme-text-item div img {
+.enigme-container .enigme-content .title .description div img {
   width: 30px;
   margin-top: 20px;
 }
 
-.fond-enigme-text {
+.enigme-img {
   position: absolute;
   width: 140%;
   z-index: -1;
 }
 
-#section-landing {
+#prince {
   display: flex;
   margin: 0 8% 0 8%;
+  margin-top: 120px;
 }
-#section-landing .section-left .left-box {
+#prince .left-box .left-box-content {
   margin-bottom: 20px;
 }
-#section-landing .section-left .left-box .left-box-title {
+#prince .left-box .left-box-content .title {
   font-family: "benyo";
   font-size: 20px;
   margin: 20px 0;
   color: #9E91B7;
 }
-#section-landing .section-left .left-box .left-box-text {
+#prince .left-box .left-box-content .description {
   font-size: 12px;
   font-weight: 100;
   line-height: 1.5;
   margin: 0 30px 20px 0;
   text-align: justify;
 }
-#section-landing .section-right .right-card {
+#prince .right-box .right-box-content {
   width: 80%;
   height: 40%;
   margin: 30% auto;
@@ -289,55 +295,55 @@ header {
   border-radius: 15px;
   color: #021740;
 }
-#section-landing .section-right .right-card .right-card-img {
+#prince .right-box .right-box-content .right-box-img {
   text-align: center;
   transform: translateY(-200px);
 }
-#section-landing .section-right .right-card .right-card-img img {
+#prince .right-box .right-box-content .right-box-img img {
   transition: 0.3s all ease;
   width: 80%;
   border-radius: 20px;
 }
-#section-landing .section-right .right-card .right-card-description {
+#prince .right-box .right-box-content .description {
   width: 70%;
   margin: 0 auto;
   transform: translateY(-180px);
 }
-#section-landing .section-right .right-card .right-card-description .desc-title {
+#prince .right-box .right-box-content .description .title {
   text-align: center;
   font-weight: bold;
   margin: 10px;
 }
-#section-landing .section-right .right-card .right-card-description .desc-status {
+#prince .right-box .right-box-content .description .profil {
   font-size: 10px;
   color: #ffffff;
   text-align: center;
   margin: 20px;
 }
-#section-landing .section-right .right-card .right-card-description .desc-status span {
+#prince .right-box .right-box-content .description .profil span {
   background: #3D2DA6;
   border-radius: 5px;
   margin: 5px;
   padding: 5px;
 }
-#section-landing .section-right .right-card .right-card-description .desc-info {
+#prince .right-box .right-box-content .description .information {
   font-size: 13px;
   text-align: justify;
 }
-#section-landing .section-right .right-card .right-card-description .desc-info p {
+#prince .right-box .right-box-content .description .information p {
   margin-bottom: 10px;
 }
-#section-landing .section-right .right-card .right-card-description .desc-info span {
+#prince .right-box .right-box-content .description .information span {
   font-weight: bold;
 }
-#section-landing .section-right .right-card .right-card-description .desc-info .info-except {
+#prince .right-box .right-box-content .description .information .info-except {
   font-weight: 100;
 }
-#section-landing .section-right .right-img {
+#prince .right-box .right-box-img2 {
   width: 80%;
   margin: 0 auto;
 }
-#section-landing .section-right .right-img img {
+#prince .right-box .right-box-img2 img {
   transition: all 0.3s ease-in-out;
 }
 
@@ -348,7 +354,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 }
-.contact .contact-box {
+.contact .formulaire {
   transform: translateY(150px);
   text-align: center;
   color: #021740;
@@ -358,22 +364,22 @@ header {
   border-radius: 150px;
   background: linear-gradient(#ffffff 2%, #ffffff 20%, rgba(255, 255, 255, 0.4235294118), rgba(255, 255, 255, 0.1098039216));
 }
-.contact .contact-box p {
+.contact .formulaire p {
   font-size: 15px;
 }
-.contact .contact-box h1 {
+.contact .formulaire h1 {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.contact .contact-box .contact-form form {
+.contact .formulaire .form form {
   display: flex;
   flex-direction: column;
 }
-.contact .contact-box .contact-form form input::placeholder, .contact .contact-box .contact-form form textarea::placeholder {
+.contact .formulaire .form form input::placeholder, .contact .formulaire .form form textarea::placeholder {
   color: #021740;
 }
-.contact .contact-box .contact-form form input[type=text], .contact .contact-box .contact-form form input[type=email] {
+.contact .formulaire .form form input[type=text], .contact .formulaire .form form input[type=email] {
   width: 50%;
   margin: 5px auto;
   padding: 10px;
@@ -381,7 +387,7 @@ header {
   border-radius: 20px;
   border: 1px solid #021740;
 }
-.contact .contact-box .contact-form form input[type=submit] {
+.contact .formulaire .form form input[type=submit] {
   width: 20%;
   margin: 5px auto;
   padding: 10px;
@@ -391,7 +397,7 @@ header {
   color: #021740;
   text-transform: uppercase;
 }
-.contact .contact-box .contact-form form textarea {
+.contact .formulaire .form form textarea {
   width: 50%;
   margin: 5px auto;
   background: transparent;
@@ -400,7 +406,7 @@ header {
   padding: 10px;
 }
 
-#wakanda-section-part {
+#wakanda {
   background: url(./../Illustrations/Wakanda_page/Pantherwakanda2.png);
   background-position: top center;
   background-size: contain;
@@ -408,61 +414,60 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.wakanda-section {
+.wak-content {
   padding-top: 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  font-size: 12px;
+  display: flex;
+  font-size: 14px;
   letter-spacing: 1px;
   line-height: 1.5;
   background-color: rgba(2, 15, 41, 0.862745098);
 }
-.wakanda-section .section-card {
-  width: 60%;
+.wak-content .section-card {
+  width: 65%;
   margin: 0 auto;
 }
-.wakanda-section .section-card h1 {
+.wak-content .section-card h1 {
   text-transform: uppercase;
   font-family: "benyo";
   color: #9E91B7;
   font-size: large;
 }
-.wakanda-section .section-card p {
+.wak-content .section-card p {
   text-align: justify;
   margin: 20px 0;
 }
-.wakanda-section .section-card .section-img {
+.wak-content .section-card .section-img {
   transform: translateX(-100px);
 }
 
-.enigme-section {
+.content-eni {
   display: flex;
   margin-left: 100px;
 }
 
-.enigme-card {
+.enigme-card-container {
   width: 40%;
 }
-.enigme-card .e-card-title {
+.enigme-card-container .e-card-title {
   margin: 10px 0;
 }
-.enigme-card .e-card-title h1 {
+.enigme-card-container .e-card-title h1 {
   font-family: "benyo";
   text-transform: uppercase;
   text-decoration: underline;
   color: #9E91B7;
   font-size: 25px;
 }
-.enigme-card .e-card-title span {
+.enigme-card-container .e-card-title span {
   font-family: "Arial";
 }
-.enigme-card .e-card-quest {
+.enigme-card-container .quest {
   margin: 10px 0;
 }
-.enigme-card .e-card-quest .quest-part-1 {
+.enigme-card-container .quest .quest-part-1 {
   font-size: 12px;
 }
-.enigme-card .e-card-quest .quest-part-2 {
+.enigme-card-container .quest .quest-part-2 {
   color: #9E91B7;
   font-size: 25px;
   font-family: "wakanda";
@@ -470,29 +475,29 @@ header {
   word-spacing: 10px;
   line-height: 1.5;
 }
-.enigme-card .e-card-quest-2 .quest-2-part-1 {
+.enigme-card-container .quest-2 .quest-part-1 {
   font-size: 12px;
 }
-.enigme-card .e-card-quest-2 .quest-2-part-2 {
+.enigme-card-container .quest-2 .quest-part-2 {
   margin: 10% 0;
   font-size: 12px;
 }
-.enigme-card .e-card-quest-3 .quest-3-part-1 {
+.enigme-card-container .quest-3 .quest-part-1 {
   font-size: 12px;
 }
-.enigme-card .e-card-quest-3 .quest-3-part-2 {
+.enigme-card-container .quest-3 .quest-part-2 {
   word-spacing: 10px;
   line-height: 1.5;
   margin: 10% 0;
   font-size: 12px;
 }
-.enigme-card .e-card-answer p {
+.enigme-card-container .answer p {
   font-size: smaller;
 }
-.enigme-card .e-card-answer form {
+.enigme-card-container .answer form {
   width: 80%;
 }
-.enigme-card .e-card-answer form input[type=text] {
+.enigme-card-container .answer form input[type=text] {
   border: 1px #F2CEF2 solid;
   background: transparent;
   padding: 10px;
@@ -500,7 +505,7 @@ header {
   width: 100%;
   margin: 10px auto;
 }
-.enigme-card .e-card-answer form input[type=button] {
+.enigme-card-container .answer form input[type=button] {
   display: block;
   border: none;
   padding: 10px 20px;
@@ -512,17 +517,26 @@ header {
   font-family: "cantarell";
 }
 
-.enigme-card .e-card-indice {
+.enigme-indice .indice {
   transform: translateX(20%);
   text-align: center;
 }
-.enigme-card .e-card-indice div.indice {
-  transform: translateY(50%) translateX(10%);
+.enigme-indice .indice div.alphabet {
+  transform: translateY(50%) translateX(33%);
+  width: 50%;
 }
-.enigme-card .e-card-indice div.indice div {
+.enigme-indice .indice div.alphabet div {
   margin-top: 20px;
 }
-.enigme-card .e-card-indice img {
+.enigme-indice .indice div.alphabet .alphabet-container {
+  margin-top: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.enigme-indice .indice div.alphabet .alphabet-container span {
+  font-family: "wakanda";
+}
+.enigme-indice .indice img {
   transform: translateY(-50%);
   width: 800Px;
 }
@@ -681,17 +695,17 @@ footer a {
   border-radius: 10px;
 }
 
-.enigme-text h1:hover {
+.enigme-content .title h1:hover {
   transform: scale(1.2);
   transition: transform 0.3s ease;
 }
 
-.wakanda-subtitle:hover, .wakanda-title:hover {
+.title-wak2:hover, .title-wak:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
 
-.head-title:hover, .head-subtitle:hover {
+.title:hover, .title2:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
@@ -700,7 +714,5 @@ footer a {
   transform: scale(1.2);
   transition: transform 0.3s ease;
 }
-
-
 
 /*# sourceMappingURL=style.css.map */

@@ -8,24 +8,31 @@
     transform: scale(1.2);
     transition: transform .3s ease;
 }
-
-.enigme-container .description {
-    h1 {
-        &:hover {
-            @extend %scale;
+.enigme-content{
+    .title {
+        h1 {
+            &:hover {
+                @extend %scale;
+            }
         }
-    }
+    }    
 }
 
-.content-title, .content-title2 {
+.title-wak2, .title-wak {
     &:hover {
         transform: scale(1.1);
         transition: transform .3s ease;
     }
 }
 
+.title, .title2 {
+    &:hover {
+        transform: scale(1.1);
+        transition: transform .3s ease;
+    }
+}
 
-.right-box {
+.section-right {
     img {
         &:hover {
             transform: scale(1.2);

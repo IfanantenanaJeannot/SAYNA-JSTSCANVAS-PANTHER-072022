@@ -1,9 +1,11 @@
-#hero {
+
+#prince {
     display: flex;
     margin: 0 8% 0 8%;
-    .left-box-container {
+    margin-top: 120px;
+    .left-box {
         
-        .left-box {
+        .left-box-content {
             margin-bottom: 20px;
 
             .title {
@@ -13,7 +15,7 @@
                 color: $pink_3;
             }
 
-            .story {
+            .description {
                 font-size: 12px;
                 font-weight: 100;
                 line-height: 1.5;
@@ -25,7 +27,7 @@
 
     .right-box {
 
-        .right-card {
+        .right-box-content {
             width: 80%;
             height: 40%;
             margin: 30% auto;
@@ -33,7 +35,7 @@
             border-radius: 15px;
             color: $dark_blue;
 
-            .right-card-img {
+            .right-box-img {
                 text-align: center;
                 transform: translateY(-200px);
                 img {
@@ -48,13 +50,13 @@
                 margin: 0 auto;
                 transform: translateY(-180px);
 
-                .name {
+                .title {
                     text-align: center;
                     font-weight: bold;
                     margin: 10px;
                 }
 
-                .etat {
+                .profil {
                     font-size: 10px;
                     color: $white;
                     text-align: center;
@@ -68,7 +70,7 @@
                     }
                 }
 
-                .profil{
+                .information {
                     font-size: 13px;
                     text-align: justify;
                     p {
@@ -86,7 +88,7 @@
             }
         }
 
-        .right-img {
+        .right-box-img2 {
             width: 80%;
             margin: 0 auto;
             
@@ -168,22 +170,23 @@
 }
 
 // Wakanda
-#second-container {
-    background: url(./../Illustrations/Wakanda_page/Pantherwakanda2.png) no-repeat;
+#wakanda {
+    background: url(./../Illustrations/Wakanda_page/Pantherwakanda2.png);
     background-position: top center;
     background-size: contain;
+    background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.second-content {
+.wak-content {
     padding-top: 100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-size: 12px;
+    display: flex;
+    font-size: 14px;
+    letter-spacing: 1px;
     line-height: 1.5;
     background-color: darken($color: #021233dc, $amount: 2);
     
-    .content-card {
+    .section-card {
         width: 65%;
         margin: 0 auto;
 
@@ -191,7 +194,7 @@
             text-transform: uppercase;
             font-family: $Benyo;
             color: $pink_3;
-            font-size: 25px;
+            font-size: large;
         }
         
         p {
@@ -199,7 +202,7 @@
             margin: 20px 0;
         }
 
-        .img {
+        .section-img {
             transform: translateX(-100px);
         }
     }
@@ -207,14 +210,14 @@
 
 //Enigme
 
-.enigme-container {
+.content-eni {
     display: flex;
     margin-left: 100px;
 }
 
-.enigme-content {
+.enigme-card-container {
     width: 40%;
-    .card-title {
+    .e-card-title {
         margin: 10px 0;
         h1 {
             font-family: $Benyo;
@@ -228,13 +231,13 @@
         }
     }
 
-    .card-quest {
+    .quest {
         margin: 10px 0;
-        .quest1 {
+        .quest-part-1 {
             font-size: 12px;
         }
 
-        .quest2 {
+        .quest-part-2 {
             color: $pink_3;
             font-size: 25px;
             font-family: $Wakanda;
@@ -244,23 +247,23 @@
         }
     }
 
-    .card-quest2 {
-        .quest1 {
-            font-size: 14px;
+    .quest-2 {
+        .quest-part-1 {
+            font-size: 12px;
         }
 
-        .quest2 {
+        .quest-part-2 {
             margin: 10% 0;
-            font-size: 14px;
+            font-size: 12px;
         }
     }
 
-    .card-quest3 {
-        .quest1 {
-            font-size: 14px;
+    .quest-3 {
+        .quest-part-1 {
+            font-size: 12px;
         }
 
-        .quest2 {
+        .quest-part-2 {
             word-spacing: 10px;
             line-height: 1.5;
             margin: 10% 0;
@@ -298,21 +301,31 @@
     }
 }
 
-.indice {
-    .indice-content {
+.enigme-indice {
+    .indice {
         transform: translateX(20%);
         text-align: center;
 
-        div.indice-txt {
+        div.alphabet {
 
-            transform: translateY(50%) translateX(10%);
+            transform: translateY(50%) translateX(33%);
+            width: 50%;
             div {
-                margin-top: -30px;
-            }            
+                margin-top: 20px;
+            } 
+            .alphabet-container{
+                margin-top: 30px;
+                font-size: 20px;
+                text-transform: uppercase;
+                span{
+                    font-family: $Wakanda;
+                }
+            }          
         }
         img {
+            // position: absolute;
             transform: translateY(-50%);
-            width: 800px;
+            width: 800Px;
         }
     }
 }
@@ -320,14 +333,17 @@
 #reponse-enigme {
     color: $white;
 }
-.alphabet span{
-    font-family:$Wakanda;
-    color: $pink_3;
-    font-size:25px;
+
+#alphabet-container {
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    .font {
+        font-family: $Wakanda;
+    }
 }
-.alphabet p{
-    padding:20px;
-}
+
 .hide {
     display: none;
 }

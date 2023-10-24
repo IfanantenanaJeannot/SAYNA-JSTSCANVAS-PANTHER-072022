@@ -3,7 +3,7 @@ function reveal() {
     for (var i = 0; i < reveals.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = reveals[i].getBoundingClientRect().top;
-      var elementVisible = 200;
+      var elementVisible = 30;
   
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
@@ -20,7 +20,7 @@ function revealesByRight() {
     for (var i = 0; i < revealesRight.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = revealesRight[i].getBoundingClientRect().top;
-      var elementVisible = 200;
+      var elementVisible = 100;
   
       if (elementTop < windowHeight - elementVisible) {
         revealesRight[i].classList.add("active");

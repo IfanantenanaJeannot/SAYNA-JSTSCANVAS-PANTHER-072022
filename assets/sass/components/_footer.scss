@@ -18,11 +18,11 @@ footer {
     .footer-desc {
         margin: 60px;
 
-        .footer-card {
+        .footer-desc-card {
             display: flex;
             margin-bottom: 50px;
 
-            .all-pages {
+            .foot-card-1 {
 
                 .foot-1-secondary {
                     margin-top: 30px;
@@ -35,13 +35,13 @@ footer {
                 }
             }
 
-            .social {
+            .foot-card-2 {
                 transform: translateX(100px);
             }
         }
     }
 
-    .tittre {
+    .foot-1-primary {
         font-size: 22px;
         text-transform: uppercase;
         p {
@@ -49,7 +49,7 @@ footer {
         }
     }
 
-    .pages {
+    .foot-2-secondary {
         margin: 30px 0;
 
         img {

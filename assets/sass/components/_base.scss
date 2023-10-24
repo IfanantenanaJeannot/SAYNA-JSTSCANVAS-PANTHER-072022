@@ -1,6 +1,6 @@
-@import "./_colors";
-@import "./_font";
-@import "./_vertical-line";
+@import "./colors";
+@import "./font";
+@import "./vertical-line";
 
 body {
     background: radial-gradient(circle, #021740, #0e1626, #0e1626, #071e31);
@@ -13,11 +13,7 @@ body {
     padding:100px;
 }
 
-@import "./_header";
-
-
-@import "./_allPages";
-
-@import "./_footer";
-
-@import "./_animation";
+@import "./header";
+@import "./pages";
+@import "./footer";
+@import "./animation";
